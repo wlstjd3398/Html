@@ -22,13 +22,53 @@
         }
         /*헤더영역*/
         header {
+            position: relative;
             width: 100%; height: 142px;
+            background: url('./img/head_top_line.png') no-repeat;
             border: 1px solid blue;
             box-sizing: border-box;
         }
+
+        header > .logo {
+            position: absolute;
+            left: 50%;
+            top: 16px;
+            margin-left: -95px;
+        }
+        header > p {
+            position: absolute;
+            right: 0;
+            top: 12px;
+        }
+        header > img {
+            float: right;
+            margin-top: 60px;
+        }
+
+        .gnb{
+            position:absolute;
+            left: 0; bottom: 0;
+            width:100%; height: 50px;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+        .gnb > li {
+            float: left;
+            width: 20%; height:100%;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        .gnb > li > a {
+            display: block;
+            width:100%; height: 100%;
+            border: 1px solid pink;
+            box-sizing: border-box;
+        }
+
         /*푸터영역*/
         footer {
             width: 100%; height: 120px;
+            margin-top: 10px;
             border: 1px solid blue;
             box-sizing: border-box;
         }
@@ -38,28 +78,52 @@
             border: 1px solid blue;
             box-sizing: border-box;
         }
+
+        main > div {
+            width: 100%; border: 1px solid green;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        
         /*메인 - slider*/
         main > .slider {
-
+            height: 312px;
         }
         /*메인 - quick*/
          main > .quick {
-            
+            height: 74px;
         }
         /*메인 - latest*/
         main > .latest {
-            
+            height: 186px;
         }
         /*메인 - info*/
         main > .info {
-            
+            height: 154px;
         }
     </style>
 </head>
 <body>
     <div id="wrapper">
         <header>
+            <a href="#" class="logo"><img src="./img/logo.png" alt="로고"/></a>
 
+            <p>
+                <a href="#">HOME |</a>
+                <a href="#">로그인 |</a>
+                <a href="#">회원가입 |</a>
+                <a href="#">고객센터</a>
+            </p>
+
+            <img src="./img/head_txt_img.png" alt="3만원이상 무료배송·팜카드 10% 적립"/>
+            
+            <ul class="gnb">
+                <li><a href="#">팜스토리</a></li>
+                <li><a href="#">장보기</a></li>
+                <li><a href="#">농작물이야기</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
         </header>
         <main>
             <div class="slider">
